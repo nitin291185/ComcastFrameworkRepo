@@ -13,7 +13,7 @@ public class CreateOrganizationTest extends BaseClass {
 
 	@Test(groups = "Smoke_Testing")
 	public void createOrganizationTest() throws Throwable {
-
+System.out.println("hi");
 		HomePage hp = new HomePage(driver);
 		OrganizationsPage op = new OrganizationsPage(driver);
 		CreatingNewOrganizationPage cnop = new CreatingNewOrganizationPage(driver);
