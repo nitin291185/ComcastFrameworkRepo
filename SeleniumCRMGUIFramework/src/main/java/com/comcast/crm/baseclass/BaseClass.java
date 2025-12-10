@@ -77,9 +77,9 @@ public class BaseClass {
 	public void BeforeMethod() throws Throwable {
 		
 		String url1=flib.getDataFromPropertyFile("url1");
-		String url = flib.getDataFromPropertyFile("url");
-		String username = flib.getDataFromPropertyFile("username");
-		String password = flib.getDataFromPropertyFile("password");
+		String url = System.getProperty("url",flib.getDataFromPropertyFile("url"));
+		String username = System.getProperty("username",flib.getDataFromPropertyFile("username"));
+		String password = System.getProperty("username",flib.getDataFromPropertyFile("password"));
 if(url.equals("http://49.249.28.218:88880"))
 {
 		LoginPage lp = new LoginPage(driver);
