@@ -14,6 +14,8 @@ public class Dashboard {
 	
 	@FindBy(xpath="//a[text()='Dashboard']")
 	private WebElement DashboardbBTN;
+	
+	
 	public WebElement getDashboardbBTN() {
 		return DashboardbBTN;
 	}
